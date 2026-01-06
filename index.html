@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmokeTrack</title>
+
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f172a">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>🚬 SmokeTrack</h1>
+
+  <div class="card">
+    <input id="brand" placeholder="Brand (Premium)" />
+    <input id="cost" type="number" placeholder="Cost per cigarette ₹" />
+    <input id="qty" type="number" placeholder="Quantity smoked now" />
+    <button id="addBtn">Add Entry</button>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><h3>Today</h3><p id="todayCount">0</p><small>₹ <span id="todayCost">0</span></small></div>
+    <div class="stat"><h3>Week</h3><p id="weekCount">0</p><small>₹ <span id="weekCost">0</span></small></div>
+    <div class="stat"><h3>Month</h3><p id="monthCount">0</p><small>₹ <span id="monthCost">0</span></small></div>
+  </div>
+
+  <div class="card">
+    <h2>📊 Brand Stats</h2>
+    <h4>Today</h4><ul id="brandToday"></ul>
+    <h4>Week</h4><ul id="brandWeek"></ul>
+    <h4>Month</h4><ul id="brandMonth"></ul>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js');
+  }
+</script>
+
+</body>
+</html>
