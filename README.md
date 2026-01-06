@@ -11,13 +11,17 @@ brand statistics, and spending — built for students.
 - No login, no ads
 
 ## Live App
-👉 https://smoketrack.netlify.app
+👉 https://itzjeetoffical.github.io/smoketrack/
 
 ## Tech Stack
 - HTML
 - CSS
 - Vanilla JavaScript
 - PWA (Service Workers)
+
+
+<img width="2816" height="1536" alt="Gemini_Generated_Image_b9yfwfb9yfwfb9yf" src="https://github.com/user-attachments/assets/82c30ed6-b4ed-45ab-a33b-3add0e1f3c0a" />
+
 
 ## Disclaimer
 This project is for educational and personal tracking purposes only.
